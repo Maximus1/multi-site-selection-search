@@ -55,6 +55,21 @@ Dieses Projekt wurde mit reinem JavaScript, HTML und CSS erstellt. Es werden kei
 - `options.html` / `options.js` / `options.css`: Bilden die Optionsseite, auf der Benutzer die Erweiterung konfigurieren können.
 - `manifest.json`: Die Manifest-Datei der Chrome-Erweiterung.
 
+## Unterstütze meinen Kater Micky
+
+Wenn Ihnen diese App gefällt und Sie die Entwicklung (und meinen Kater) unterstützen möchten, würde ich mich über eine kleine Spende freuen!
+
+<p>
+  <a href="https://www.paypal.me/mbneedsmoney/5">
+      <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal">
+  </a>
+</p>
+Wenn Sie auf das Paypal Logo klicken, gelangen Sie zur Spendenseite, auf der Sie einen für Sie passenden Betrag Spenden können:
+- Frühstück für Micky (1,00 €)
+- Frühstück + Mittag für Micky (3,00 €)
+- Ein Tag mal keine Mäuse essen (5,00 €)
+- Die Woche ist gerettet (10,00 €)
+
 ## Lizenz
 
 Dieses Projekt steht unter der MIT-Lizenz.

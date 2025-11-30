@@ -1,0 +1,36 @@
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+.container { max-width: 860px; margin: 2rem auto; padding: 0 1rem; }
+h1 { font-size: 1.6rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 0; }
+h2 { font-size: 1.2rem; margin-top: 0; }
+
+/* Tabs */
+.tab-bar { display: flex; border-bottom: 1px solid #ccc; }
+.tab-button { background: none; border: none; border-bottom: 3px solid transparent; padding: 1rem; cursor: pointer; font-size: 1rem; border-radius: 0; }
+.tab-button:hover { background: #f0f0f0; }
+.tab-button.active { border-bottom-color: #007bff; font-weight: bold; }
+
+.tab-content { padding-top: 1.5rem; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* Settings Tab Content */
+#categories { display: flex; flex-direction: column; gap: 1rem; margin: 1rem 0; }
+.category-card { border: 1px solid #ddd; border-radius: .75rem; padding: 1rem; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .05); }
+.category-header { display: flex; gap: .5rem; align-items: center; margin-bottom: .5rem; }
+.category-header input { flex: 1; }
+.site-list { display: flex; flex-direction: column; gap: .5rem; }
+.site-row { display: grid; grid-template-columns: 1fr 2fr auto; gap: .5rem; align-items: center; }
+input { padding: .5rem; border: 1px solid #ccc; border-radius: .5rem; width: 100%; }
+.category-controls { margin-top: .5rem; display: flex; justify-content: flex-end; }
+.controls { display: flex; gap: .5rem; align-items: center; }
+button { padding: .5rem .75rem; border-radius: .5rem; border: 1px solid #888; background: #f7f7f7; cursor: pointer; }
+button:hover:not(:disabled) { background: #eee; }
+button:disabled { opacity: .4; cursor: not-allowed; }
+.remove-site, .remove-category { min-width: 120px; }
+.io-controls { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; display: flex; gap: .5rem; }
+#status { margin-left: .5rem; font-size: .9rem; }
+.help { margin-top: .5rem; }
+
+/* Help/About Tab Content */
+#tab-help p, #tab-about p { line-height: 1.6; }
+#tab-help code { background-color: #eee; padding: .2em .4em; border-radius: 3px; }

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Multi‑Site Suche</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; min-width: 320px; padding: 12px; }
+    input, select { width: 100%; padding: .5rem; border: 1px solid #ccc; border-radius: .5rem; }
+    .row { display: flex; gap: .5rem; margin-top: .5rem; }
+    button { padding: .5rem .75rem; border-radius: .5rem; border: 1px solid #888; background: #f7f7f7; cursor: pointer; }
+    button:hover { background: #eee; }
+    small { display:block; color: #666; margin-top: .25rem; }
+  </style>
+</head>
+<body>
+  <select id="category"></select>
+  <input id="q" placeholder="Suchbegriff (oder Auswahl verwenden)"/>
+  <div class="row">
+    <button id="useSelection">Auswahl übernehmen</button>
+    <button id="search">Suchen</button>
+  </div>
+  <small>Tipp: Rechtsklick auf markierten Text → „Mit Multi‑Site Suche suchen“.</small>
+  <script src="popup.js"></script>
+</body>
+</html>

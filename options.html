@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Site Selection Search Optionen</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Multi-Site Suche</h1>
+
+  <div class="tab-bar">
+    <button class="tab-button active" data-tab="tab-settings">Einstellungen</button>
+    <button class="tab-button" data-tab="tab-help">Anleitung</button>
+    <button class="tab-button" data-tab="tab-about">Über</button>
+  </div>
+
+  <div class="tab-content">
+    <div id="tab-settings" class="tab-panel active">
+      <h2>Seiten für die Suche konfigurieren</h2>
+      <p class="help">Jede Kategorie besteht aus einem Namen und mehreren Webseiten. Verwenden Sie <code>%s</code> als Platzhalter für den Suchbegriff.</p>
+      <div id="categories"></div>
+      <div class="controls">
+        <button id="add-category">Neue Kategorie hinzufügen</button>
+      </div>
+      <div class="controls" style="margin-top: 1rem;">
+        <button id="save">Speichern</button>
+        <div id="status"></div>
+      </div>
+      <div class="io-controls">
+        <button id="import">Importieren</button>
+        <button id="export">Exportieren</button>
+        <input type="file" id="import-file" accept=".json" style="display: none;" />
+      </div>
+    </div>
+
+    <div id="tab-help" class="tab-panel">
+      <h2>Anleitung</h2>
+      <p>Diese Erweiterung ermöglicht es Ihnen, einen Suchbegriff auf mehreren Webseiten gleichzeitig zu suchen.</p>
+      <h3>Platzhalter</h3>
+      <p>Verwenden Sie <code>%s</code> in der URL als Platzhalter für den Suchbegriff. Wenn Sie beispielsweise auf Google suchen möchten, wäre die URL:</p>
+      <p><code>https://www.google.com/search?q=%s</code></p>
+      <h3>Suche durchführen</h3>
+      <p>Klicken Sie auf das Erweiterungssymbol in der Browser-Symbolleiste, geben Sie Ihren Suchbegriff ein und klicken Sie auf "Suchen". Alternativ können Sie Text auf einer beliebigen Webseite markieren, mit der rechten Maustaste darauf klicken und "Mit Multi‑Site Suche suchen" aus dem Kontextmenü auswählen.</p>
+    </div>
+
+    <div id="tab-about" class="tab-panel">
+      <h2>Über</h2>
+      <p>Dieser Bereich wird zu einem späteren Zeitpunkt mit Inhalt gefüllt.</p>
+    </div>
+  </div>
+</div>
+
+<script src="options.js"></script>
+</body>
+</html>
